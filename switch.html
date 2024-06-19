@@ -38,8 +38,12 @@ font-family: 'poppins';
         a.innerHTML = "Hide Me"
         h=0;
       }
-      setTimeout(hide,1000)
+      r= setTimeout(hide,1000)
     }
+    function stop(){
+        clearTimeout(r)
+    }
+        
 </script>
 <body>
   <center>
@@ -48,7 +52,9 @@ font-family: 'poppins';
     <hr><br>
 
     <img src="Dayalbagh_Educational_Institute_logo.jpg" alt="logo" id="photu"><br><br>
-    <button onclick="hide()" id="butt">Hide me</button>
+    <button onclick="hide()" id="butt">Start Loop</button>
+    <button onclick="stop()">Stop Loop </button>
+      
     <footer><p>&copy; Mudit Web Development </footer>
       <ul>
         <h3>Welcome to the blinking image practical</h3>
@@ -72,7 +78,12 @@ font-family: 'poppins';
               h=0; <br>
             } <br>
             setTimeout(hide,1000) <p><b>Just blinking because of this </b></p>
-          }</li>
+          }
+             function stop(){
+        clearTimeout(r)
+    }
+        
+        </li>
       </ul>
     </center>
 </body>
