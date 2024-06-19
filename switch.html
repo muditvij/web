@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchJS</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<style>
+    button{
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    h1,p{
+font-family: 'poppins';
+    }
+    ul li,h3{
+      font-family: 'poppins';
+      list-style: none;
+    }
+</style>
+<script>
+    var h=0;
+    function hide(){
+      if(h==0){
+        x=document.getElementById("photu")
+        x.style.visibility = "hidden"
+        a = document.getElementById("butt")
+        a.innerHTML = "Visible me"
+        h=1
+      }
+      else{
+        x=document.getElementById("photu")
+        x.style.visibility="visible"
+         a = document.getElementById("butt")
+        a.innerHTML = "Hide Me"
+        h=0;
+      }
+      setTimeout(hide,1000)
+    }
+</script>
+<body>
+  <center>
+    <h1>SwitchJS</h1>
+    <p>Let's play with a button <br>"Concept of recursion" </p>
+    <hr><br>
+
+    <img src="Dayalbagh_Educational_Institute_logo.jpg" alt="logo" id="photu"><br><br>
+    <button onclick="hide()" id="butt">Hide me</button>
+    <footer><p>&copy; Mudit Web Development </footer>
+      <ul>
+        <h3>Welcome to the blinking image practical</h3>
+        <li>Concept of recursion.</li><br>
+        <li>Calling function in function itself.</li><br>
+        <li>js used</li><br>
+        <li> var h=0;<br>
+          function hide(){<br>
+            if(h==0){<br>
+              x=document.getElementById("photu") <br>
+              x.style.visibility = "hidden"<br>
+              a = document.getElementById("butt") <br>
+              a.innerHTML = "Visible me" <br>
+              h=1 <br>
+            } <br>
+            else{ <br>
+              x=document.getElementById("photu") <br>
+              x.style.visibility="visible" <br>
+               a = document.getElementById("butt") <br>
+              a.innerHTML = "Hide Me" <br>
+              h=0; <br>
+            } <br>
+            setTimeout(hide,1000) <p><b>Just blinking because of this </b></p>
+          }</li>
+      </ul>
+    </center>
+</body>
+</html>
